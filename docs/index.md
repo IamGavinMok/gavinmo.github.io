@@ -3,21 +3,28 @@
 layout: home
 
 hero:
-  name: 'gavinmo'
-  text: 'gavinmo website'
+  name: 'ga'
+  # text: 'ga website'
   tagline: My great project tagline
-  image: 
-    src: '/assets/logo.png'
-    alt: string
+  image:
+    src: '/assets/music-logo.png'
+    alt: ga
   actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+    # - theme: brand
+    #   text: Markdown Examples
+    #   link: /markdown-examples
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
+  - title: Feature A
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /travel/mali
+  - title: Feature B
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
@@ -27,11 +34,11 @@ features:
 ---
 
 <script setup>
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamMembers
-} from 'vitepress/theme'
+// import {
+//   VPTeamPage,
+//   VPTeamPageTitle,
+//   VPTeamMembers
+// } from 'vitepress/theme'
 
 const members = [
   {
@@ -46,7 +53,7 @@ const members = [
 ]
 </script>
 
-<VPTeamPage>
+<!-- <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
       Our Team
@@ -59,4 +66,4 @@ const members = [
   <VPTeamMembers
     :members="members"
   />
-</VPTeamPage>
+</VPTeamPage> -->
