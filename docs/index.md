@@ -3,42 +3,48 @@
 layout: home
 
 hero:
-  name: 'ga'
+  name: "ga"
   # text: 'ga website'
   tagline: My great project tagline
   image:
-    src: '/assets/music-logo.png'
+    src: "/assets/logo.png"
     alt: ga
-  actions:
-    # - theme: brand
-    #   text: Markdown Examples
-    #   link: /markdown-examples
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /travel/mali
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  # actions:
+  # - theme: brand
+  #   text: Markdown Examples
+  #   link: /markdown-examples
+  # - theme: alt
+  #   text: API Examples
+  #   link: /api-examples
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#     link: /travel/mali
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<script setup>
-// import {
-//   VPTeamPage,
-//   VPTeamPageTitle,
-//   VPTeamMembers
-// } from 'vitepress/theme'
+![图片](./travel/assets/logo.png)
+
+<span v-for="i in 3"> span: {{ i }} </span>
+
+<script setup lang="ts">
+import page from './components/index.vue';
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme'
+
+
 
 const members = [
   {
@@ -53,7 +59,9 @@ const members = [
 ]
 </script>
 
-<!-- <VPTeamPage>
+<page></page>
+
+<VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
       Our Team
@@ -66,4 +74,4 @@ const members = [
   <VPTeamMembers
     :members="members"
   />
-</VPTeamPage> -->
+</VPTeamPage>
