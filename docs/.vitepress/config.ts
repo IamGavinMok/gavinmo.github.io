@@ -48,6 +48,6 @@ export default {
     },
   },
   // 增加 head 标签
-  head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  // head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
 
 }
